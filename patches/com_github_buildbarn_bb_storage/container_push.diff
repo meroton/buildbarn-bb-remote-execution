@@ -1,0 +1,12 @@
+diff --git tools/container.bzl tools/container.bzl
+index fa213df..5703da2 100644
+--- tools/container.bzl
++++ tools/container.bzl
+@@ -42,6 +42,6 @@ def container_push_official(name, image, component):
+     oci_push(
+         name = name,
+         image = image,
+-        repository = "ghcr.io/buildbarn/" + component,
++        repository = "ghcr.io/meroton/" + component,
+         remote_tags = "@com_github_buildbarn_bb_storage//tools:stamped_tags",
+     )

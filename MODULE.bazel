@@ -24,6 +24,9 @@ git_override(
 git_override(
     module_name = "com_github_buildbarn_bb_storage",
     commit = "87ea1750ca4cd8716c5961bbb70637d9839a536b",
+    patches = [
+        "//:patches/com_github_buildbarn_bb_storage/container_push.diff",
+    ],
     remote = "https://github.com/buildbarn/bb-storage.git",
 )
 
